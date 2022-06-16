@@ -1,6 +1,6 @@
 # Contribution Guide
 
-If you have any comment or advice, please report your [issue](https://github.com/purple-dye/components/issues),
+If you have any comments or advice, please report your [issue](https://github.com/purple-dye/components/issues),
 or make any change as you wish and submit a [PR](https://github.com/purple-dye/components/pulls).
 
 ## Reporting New Issues
@@ -17,10 +17,10 @@ We recommend [Visual Studio Code](https://code.visualstudio.com/) when working o
 
 ### Pull Request Guide
 
-If you are developer of PurpleDye Components repo and you are willing to contribute, feel free to create a new branch, finish your modification and submit a PR. PurpleDye group will review your work and merge it to master branch.
+If you are a developer of PurpleDye Components repo and you are willing to contribute, feel free to create a new branch, finish your modification and submit a PR. PurpleDye group will review your work and merge it to development branch.
 
 ```bash
-# Create a new branch for development. The name of branch should be semantic, avoiding words like 'update' or 'tmp'. We suggest to use feature/xxx, if the modification is about to implement a new feature.
+# Create a new branch for development. The name of branch should be semantic, avoiding words like 'update' or 'tmp'. We suggest using feature/xxx, if the modification is about to implement a new feature.
 $ git checkout -b branch-name
 
 # Run the test after you finish your modification. Add new test cases or change old ones if you feel necessary
@@ -28,7 +28,7 @@ $ conda env create -f environment.yml # Only if you haven't created the environm
 $ conda activate pdcomponents
 $ tox
 
-# If your modification pass the tests, congradulations it's time to push your work back to us. Notice that the commit message should be wirtten in the following format.
+# If your modification passes the tests, congratulations it's time to push your work back to us. Notice that the commit message should be written in the following format.
 $ git add . # git add -u to delete files
 $ git commit -m "fix(role): role.use must xxx"
 $ git push origin branch-name
@@ -39,9 +39,8 @@ Then you can create a Pull Request at [PurpleDye Components](https://github.com/
 No one can guarantee how much will be remembered about certain PR after some time. To make sure we can easily recap what happened previously, please provide the following information in your PR.
 
 1. Need: What function you want to achieve (Generally, please point out which issue is related).
-2. Updating Reason: Different with issue. Briefly describe your reason and logic about why you need to make such modification.
+2. Updating Reason: Different with issue. Briefly describe your reason and logic about why you need to make such modifications.
 3. Related Testing: Briefly describe what part of testing is relevant to your modification.
-4. User Tips: Notice for x6 users. You can skip this part, if the PR is not about update in API or potential compatibility problem.
 
 ### Style Guide
 
@@ -51,11 +50,11 @@ We follow the code style of the [Black formatter](https://black.readthedocs.io/e
 $ black .
 ```
 
-We recommend to set `black` to your default formatter for Python files and activate the `format on save` in yout editor.
+We recommend to set `black` to your default formatter for Python files and activating the `format on save` in your editor.
 
 ### Commit Message Format
 
-You are encouraged to use [angular commit-message-format](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit-message-format) to write commit message. In this way, we could have a more trackable history and an automatically generated changelog.
+You are encouraged to use [angular commit-message-format](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit-message-format) to write a commit message. In this way, we could have a more trackable history and an automatically generated changelog.
 
 ```xml
 <type>(<scope>): <subject>
@@ -81,7 +80,7 @@ Must be one of the following:
 
 （2）`<scope>`
 
-The scope could be anything specifying place of the commit change.
+The scope could be anything specifying the place of the commit change.
 
 （3）`<subject>`
 
@@ -89,7 +88,7 @@ Use succinct words to describe what did you do in the commit change.
 
 （4）`<body>`
 
-Feel free to add more content in the body, if you think subject is not self-explanatory enough, such as what it is the purpose or reasons of you commit.
+Feel free to add more content in the body, if you think the subject is not self-explanatory enough, such as what it is the purpose or the reasons of your commit.
 
 （5）`<footer>`
 
@@ -101,7 +100,7 @@ e.g.
 ```
 fix(Upload CSV): [BREAKING_CHANGE] couple of unit tests for...
 
-Some parameters of the component were not processed correctly so that an undesired behavior when uploading a csv file an running the component was observed (...)
+Some parameters of the component were not processed correctly so an undesired behavior when uploading a csv file and running the component was observed (...)
 
 Document change on purple-dye/components#123
 
@@ -119,4 +118,4 @@ Look at [these files](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJyg
 `development` branch is the latest stable version.
 
 - Just checkout develop branch from `development`
-- All new features will be added into `development` branch as well as all bug-fix except security issues. In such way, we can motivate developers to update to the latest stable version.
+- All new features will be added to the `development` branch as well as all bug-fix except security issues. In such a way, we can motivate developers to update to the latest stable version.
