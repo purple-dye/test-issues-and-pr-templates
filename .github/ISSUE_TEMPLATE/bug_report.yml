@@ -1,0 +1,113 @@
+name: "🐞 Bug Report"
+description: Report a reproducible error of some PurpleDye Component
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue :pray:.
+
+        This issue tracker is for reporting bugs of PurpleDye components found when using them in a PurpleDye workspace (canvas): https://app.purpledye.io/?public-dashboards=all.
+        If you have a question about how to achieve something and are struggling, please join the PurpleDye discord: https://discord.com/invite/aUTgv2Yc4u.
+
+        If the bugged component can be updated to a newer version, consider updating it to see if the bug is still happening with the newest version.
+
+        Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
+         - PurpleDye Components's Issue's tab: https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+         - PurpleDye Components's Closed issues tab: https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed
+         - Or ask the community in the Discord server.
+
+        The more information you fill in, the better the community can help you.
+
+  - type: input
+    id: component-name
+    attributes:
+      label: The Name of the Component to Report
+      description: |
+        The name of the component that appears when adding it from the PurpleDye Marketplace.
+
+      placeholder: |
+        e.g. Upload CSV
+    validations:
+      required: true
+
+  - type: input
+    id: component-version
+    attributes:
+      label: The Version of the Component to Report
+      description: |
+        The version of the component where the bug is observed.
+
+      placeholder: |
+        e.g. 0.0.5
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: Provide a clear and concise description of the challenge you are running into.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: A PurpleDye Wrokspace where the Bug Happens
+      description: |
+        Which PurpleDye workspace (canvas) were you using when the bug happened? Add the web browser link associated to that workspace.
+        Note:
+        - We recommend to add sticky-note components to the canvas to indicate where the bug is appearing and optionally some additional information about into.
+        - If you need to continue working with the workspace where the bugg appeared, please, create a new project with a new workspace adding the necessary components to reproduce the bug you observed. And share the link of this new workspace here.
+
+      placeholder: |
+        e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce the Bug or Issue
+      description: Describe the steps we have to take to reproduce the behavior.
+      placeholder: |
+        1. Add the '...' component to a workspace '...'
+        2. Connect it to a '...' component '...'
+        3. Open the configuration of the '...' component
+        4. Add the value '...' to the parameter named '...'
+        5. Run the component '...'
+        6. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Provide a clear and concise description of what you expected to happen.
+      placeholder: |
+        As a user, I expected ___ behavior but i am seeing ___
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots_or_videos
+    attributes:
+      label: Screenshots or Videos
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        You can drag your video or image files inside of this editor ↓
+  - type: textarea
+    id: platform
+    attributes:
+      label: Platform
+      value: |
+        - OS: [e.g. macOS, Windows, Linux]
+        - Browser: [e.g. Chrome, Safari, Firefox]
+        - Version: [e.g. 91.1]
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
