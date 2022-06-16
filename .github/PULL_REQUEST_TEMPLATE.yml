@@ -1,0 +1,7 @@
+name: "Pull Request"
+title: "[<pr type>] <title>"
+body:
+  - type: checkboxes
+    attributes:
+      options:
+        - label: Name
