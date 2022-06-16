@@ -23,7 +23,7 @@ body:
       label: Have I tried the latest version of the Component?
       description: Please, check if the latest version of the Component satisfies your suggestion or improvement.
       options:
-        - label: I checked the latest version of the component and I still want to make the suggestion.
+        - label: I have checked the latest version of the component and I still want to make the suggestion.
           required: true
 
   - type: checkboxes
@@ -51,6 +51,7 @@ body:
     attributes:
       label: Describe the improvement or feature request
       description: Provide a clear and concise description of your suggestion.
+      placeholder: |
         1. Add the '...' component to a workspace '...'
         2. Connect it to a '...' component '...'
         3. Open the configuration of the '...' component
