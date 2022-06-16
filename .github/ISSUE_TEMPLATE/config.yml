@@ -4,6 +4,14 @@ contact_links:
     url: https://discord.com/invite/aUTgv2Yc4u
     about: The discord channel of PurpleDye
 
-  - name: 💬 Support Discord Channel
+  - name: 💬 General Support Discord Channel
     url: https://discord.com/channels/937789590390071346/937789590998237272
-    about: The support channel of PurpleDye's discord.
+    about: The support channel of PurpleDye's discord. Here you can ask for any general problem you are having with the platform.
+
+  - name: 💡 New Component or Component Improvement Suggestions Discord Channel
+    url: https://discord.com/channels/937789590390071346/960967853664784424
+    about: The discord channel to suggest new components or improvements to existing components for the PurpleDye Components Marketplace.
+
+  - name: 💡 General Suggestions Discord Channel
+    url: https://discord.com/channels/937789590390071346/960967813940527135
+    about: Here you can suggest any kind of improvements or ideas that you consider interesting for improving PurpleDye.
