@@ -20,7 +20,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: Have I checked the PurpleDye Marketplace and asked the community about the component funcionality I need?
+      label: Have I checked the PurpleDye Marketplace and asked the community about the component functionality I need?
       description: Please, check if there is already a PurpleDye component that does what you need.
       options:
         - label: I have checked the marketplace and asked the community via Discord.
@@ -38,7 +38,7 @@ body:
     id: component-name
     attributes:
       label: Component Name
-      description: A suggestion for the name of the new component you request. Remmember to use camelcase notation.
+      description: A suggestion for the name of the new component you request. Remember to use camelcase notation.
 
       placeholder: |
         e.g. My Suggested Component
@@ -49,7 +49,7 @@ body:
     id: component-type
     attributes:
       label: Component Type
-      description: Which type you think the component should be. Choose only one if you are sure, otherwise you can select more than one.
+      description: Which type do you think the component should be? Choose only one if you are sure. Otherwise, you can select more than one.
       multiple: true
       options:
         - Input
@@ -108,6 +108,15 @@ body:
         - '...'
 
     validations:
+      required: true
+
+  - type: input
+    id: python-existing-package
+    attributes:
+      label: Link to Python package or library
+      description: Do you know about any Python package or library that can achieve what the new component is expected to achieve? Please, add an URL to the package or library or at least the package name.
+      placeholder: e.g., https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+    validations:
       required: false
 
   - type: input
@@ -115,7 +124,7 @@ body:
     attributes:
       label: A PurpleDye Workspace
       description: |
-        A PurpleDye workspace to support the use case you are trying to do with the currently available componenents but you need the new suggested component to continue.
+        A PurpleDye workspace to support the use case you are trying to do with the currently available components but you need the new suggested component to continue.
       placeholder: |
         e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
     validations:

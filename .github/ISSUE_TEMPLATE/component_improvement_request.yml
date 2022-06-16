@@ -64,7 +64,7 @@ body:
     attributes:
       label: A PurpleDye Workspace
       description: |
-        A PurpleDye workspace to support the use case you are trying to do with the currently available componenents.
+        A PurpleDye workspace to support the use case you are trying to do with the currently available components.
       placeholder: |
         e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
     validations:
