@@ -15,3 +15,7 @@ contact_links:
   - name: 💬 General Suggestions Discord Channel
     url: https://discord.com/channels/937789590390071346/960967813940527135
     about: Here you can suggest any kind of improvements or ideas that you consider interesting for improving PurpleDye.
+
+  - name: 💡 Develop Your Own PurpleDye Components
+    url: https://github.com/purple-dye/template-repository-for-components
+    about: If you are interested in developing new PurpleDye Components by your own, you can start with this template repository.
