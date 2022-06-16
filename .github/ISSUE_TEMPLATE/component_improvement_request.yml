@@ -52,12 +52,11 @@ body:
       label: Describe the improvement or feature request
       description: Provide a clear and concise description of your suggestion.
       placeholder: |
-        1. Add the '...' component to a workspace '...'
-        2. Connect it to a '...' component '...'
-        3. Open the configuration of the '...' component
-        4. Add the value '...' to the parameter named '...'
-        5. Run the component '...'
-        6. See the error
+        - I think the parameter '...' should allow to '...'.
+        - I suggest adding a new parameter '...' that does '...'.
+        - I suggest adding a new output DataFrame containing '...'.
+        - I suggest '...'.
+
     validations:
       required: true
   - type: input
