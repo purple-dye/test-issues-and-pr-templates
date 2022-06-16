@@ -1,5 +1,5 @@
 name: "🐞 Bug Report"
-description: Report a reproducible error of some PurpleDye Component
+description: Report a reproducible error of some PurpleDye Component.
 title: "[BUG] <title>"
 body:
   - type: markdown
@@ -61,7 +61,7 @@ body:
   - type: input
     id: link
     attributes:
-      label: A PurpleDye Wrokspace where the Bug Happens
+      label: A PurpleDye Workspace where the Bug Happens
       description: |
         Which PurpleDye workspace (canvas) were you using when the bug happened? Add the web browser link associated to that workspace.
         Note:

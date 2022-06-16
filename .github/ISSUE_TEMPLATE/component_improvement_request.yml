@@ -1,0 +1,97 @@
+name: "💡 Component Improvement or Feature Request"
+description: Create an improvement request to add some new feature or improvement to an existing PurpleDye component.
+title: "[COMPONENT IMPROVEMENT] <title>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue :pray:.
+
+        This issue tracker is for suggesting new features or improvements of Components that are currently available at the [PurpleDye Marketplace](https://app.purpledye.io/?marketplace=all).
+
+        If you have a question about how to achieve something and are struggling, please join the [PurpleDye discord](https://discord.com/invite/aUTgv2Yc4u).
+
+        Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
+         - [PurpleDye Components's Issue's tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+         - [PurpleDye Components's Closed issues tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+         - Or ask the community in the Discord server.
+
+        The more information you fill in, the better the community can help you.
+
+  - type: checkboxes
+    attributes:
+      label: Have I tried the latest version of the Component?
+      description: Please, check if the latest version of the Component satisfies your suggestion or improvement.
+      options:
+        - label: I checked the latest version of the component and I still want to make the suggestion.
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: input
+    id: component-name
+    attributes:
+      label: The Name of the Component
+      description: |
+        The name of the component that appears when adding it from the PurpleDye Marketplace.
+
+      placeholder: |
+        e.g. Upload CSV
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the improvement or feature request
+      description: Provide a clear and concise description of your suggestion.
+        1. Add the '...' component to a workspace '...'
+        2. Connect it to a '...' component '...'
+        3. Open the configuration of the '...' component
+        4. Add the value '...' to the parameter named '...'
+        5. Run the component '...'
+        6. See the error
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: A PurpleDye Workspace
+      description: |
+        A PurpleDye workspace to support the use case you are trying to do with the currently available componenents.
+      placeholder: |
+        e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Current behavior v.s. Expected behavior of the component
+      description: Provide a clear and concise description of what you expected to happen and what is happening with the latest version of the component.
+      placeholder: |
+        ...
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots_or_videos
+    attributes:
+      label: Screenshots or Videos
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        You can drag your video or image files inside of this editor ↓
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about your suggestion.
