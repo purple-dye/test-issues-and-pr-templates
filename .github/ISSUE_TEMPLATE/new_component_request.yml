@@ -1,0 +1,139 @@
+name: "💡 New Component Request"
+description: Create a request for a new PurpleDye component that is not currently available in the marketplace.
+title: "[NEW COMPONENT] <title>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue :pray:.
+
+        This issue tracker is for suggesting new PurpleDye Components that **are not available** at the [PurpleDye Marketplace](https://app.purpledye.io/?marketplace=all).
+
+        If you have a question about how to achieve something and are struggling, please join the [PurpleDye discord](https://discord.com/invite/aUTgv2Yc4u).
+
+        Before submitting a "new component request"/issue, please check the links below to see if there is a solution or question posted there already:
+         - [PurpleDye Components's Issue's tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+         - [PurpleDye Components's Closed issues tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+         - Or ask the community in the Discord server.
+
+        The more information you fill in, the better the community can help you.
+
+  - type: checkboxes
+    attributes:
+      label: Have I checked the PurpleDye Marketplace and asked the community about the component funcionality I need?
+      description: Please, check if there is already a PurpleDye component that does what you need.
+      options:
+        - label: I have checked the marketplace and asked the community via Discord.
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+
+  - type: input
+    id: component-name
+    attributes:
+      label: Component Name
+      description: A suggestion for the name of the new component you request. Remmember to use camelcase notation.
+
+      placeholder: |
+        e.g. My Suggested Component
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component-type
+    attributes:
+      label: Component Type
+      description: Which type you think the component should be. Choose only one if you are sure, otherwise you can select more than one.
+      multiple: true
+      options:
+        - Input
+        - Output
+        - Model
+        - Operation
+        - Plot
+        - Dataset
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage
+    attributes:
+      label: Use case
+      description: Give at least one example where the new component could be used in a PurpleDye workspace.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Component Description and Functionality
+      description: Describe the expected functionality of the component. Provide a clear and concise description of your suggestion.
+      placeholder: |
+        - The component should transform a DataFrame in such a way that '...'
+        - The component would output a DataFrame containing '...' and another one containing '...'
+        - '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: tags
+    attributes:
+      label: Component Tags
+      description: Specify some tags to define the component. You can open the marketplace from a PurpleDye workspace to see which tags are currently being used, and therefore choose some of them, or suggest new ones.
+      placeholder: |
+        - crypto 
+        - regression
+        - analysis
+        - cleaning
+        - processing
+        - '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: insights
+    attributes:
+      label: Component Insights
+      description: Which insights do you expect to obtain after running the component.
+      placeholder: |
+        - A PNG image that '...' 
+        - A markdown text containing information about '...'
+        - An HTML such that '...'
+        - '...'
+
+    validations:
+      required: false
+
+  - type: input
+    id: link
+    attributes:
+      label: A PurpleDye Workspace
+      description: |
+        A PurpleDye workspace to support the use case you are trying to do with the currently available componenents but you need the new suggested component to continue.
+      placeholder: |
+        e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots_or_videos
+    attributes:
+      label: Screenshots or Videos
+      description: |
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        You can drag your video or image files inside of this editor ↓
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about your suggestion.
