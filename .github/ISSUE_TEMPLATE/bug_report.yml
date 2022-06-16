@@ -7,14 +7,14 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for reporting bugs of PurpleDye components found when using them in a PurpleDye workspace (canvas): https://app.purpledye.io/?public-dashboards=all.
-        If you have a question about how to achieve something and are struggling, please join the PurpleDye discord: https://discord.com/invite/aUTgv2Yc4u.
+        This issue tracker is for reporting bugs of PurpleDye components found when using them in a PurpleDye workspace (canvas) in the [platform](https://app.purpledye.io/?public-dashboards=all).
+        If you have a question about how to achieve something and are struggling, please join the [PurpleDye discord](https://discord.com/invite/aUTgv2Yc4u).
 
         If the bugged component can be updated to a newer version, consider updating it to see if the bug is still happening with the newest version.
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
-         - PurpleDye Components's Issue's tab: https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
-         - PurpleDye Components's Closed issues tab: https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed
+         - [PurpleDye Components's Issue's tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+         - [PurpleDye Components's Closed issues tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
          - Or ask the community in the Discord server.
 
         The more information you fill in, the better the community can help you.
