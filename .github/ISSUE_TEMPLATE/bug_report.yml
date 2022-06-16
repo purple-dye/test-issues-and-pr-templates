@@ -1,5 +1,6 @@
 name: "🐞 Bug Report"
 description: Report a reproducible error of some PurpleDye Component
+title: "[BUG] <title>"
 body:
   - type: markdown
     attributes:
