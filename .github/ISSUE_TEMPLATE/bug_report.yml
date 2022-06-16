@@ -15,7 +15,7 @@ body:
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
          - [PurpleDye Components's Issue's tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
          - [PurpleDye Components's Closed issues tab](https://github.com/purple-dye/components/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
-         - Or ask the community in the Discord server.
+         - Or ask the community on the Discord server.
 
         The more information you fill in, the better the community can help you.
 
@@ -63,10 +63,10 @@ body:
     attributes:
       label: A PurpleDye Workspace where the Bug Happens
       description: |
-        Which PurpleDye workspace (canvas) were you using when the bug happened? Add the web browser link associated to that workspace.
+        Which PurpleDye workspace (canvas) were you using when the bug happened? Add the web browser link associated with that workspace.
         Note:
-        - We recommend to add sticky-note components to the canvas to indicate where the bug is appearing and optionally some additional information about into.
-        - If you need to continue working with the workspace where the bugg appeared, please, create a new project with a new workspace adding the necessary components to reproduce the bug you observed. And share the link of this new workspace here.
+        - We recommend adding sticky-note components to the canvas to indicate where the bug is appearing and optionally some additional information about into.
+        - If you need to continue working with the workspace where the bug appeared, please, create a new project with a new workspace adding the necessary components to reproduce the bug you observed. And share the link to this new workspace here.
 
       placeholder: |
         e.g. https://app.purpledye.io/?project=jhryy3rasw9jvacb&canvas-view=bgsisjklzrnvoou6&mode=view
@@ -92,7 +92,7 @@ body:
       label: Expected behavior
       description: Provide a clear and concise description of what you expected to happen.
       placeholder: |
-        As a user, I expected ___ behavior but i am seeing ___
+        As a user, I expected ___ behavior but I am seeing ___
     validations:
       required: true
   - type: textarea
